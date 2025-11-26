@@ -1,0 +1,22 @@
+Measures of central tendency
+The measures of central tendencies are given by various parameters but the most commonly used ones are mean, median and mode.
+These parameters are discussed below.
+What is Mean?
+    Mean is the most commonly used measure of central tendency. 
+    It actually represents the average of the given collection of data.
+    It is applicable for both continuous and discrete data.
+
+It is equal to the sum of all the values in the collection of data divided by the total number of values.
+
+Suppose we have n values in a set of data namely as x1, x2, x3, …, xn, then the mean of data is given by:
+
+
+ 
+What is Median?
+Generally median represents the mid-value of the given set of data when arranged in a particular order.
+Median: Given that the data collection is arranged in ascending or descending order, the following method is applied:
+    If number of values or observations in the given data is odd, then the median is given by [(n+1)/2]th observation.
+    If in the given data set, the number of values or observations is even, then the median is given by the average of (n/2)th  and  [(n/2) +1]th observation.
+
+What is Mode?
+The most frequent number occurring in the data set is known as the mode.
