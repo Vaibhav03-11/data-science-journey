@@ -1,0 +1,90 @@
+Module 1: The Data Science Process & Ecosystem
+Concepts
+Data Science is not just about writing code; it's a systematic process for solving problems and extracting insights from data.
+The most common framework is CRISP-DM (Cross-Industry Standard Process for Data Mining).
+
+The CRISP-DM Stages:
+
+-Business Understanding: What problem are we trying to solve? What are the business objectives? (e.g., Reduce customer churn by 15% in the next quarter).
+
+-Data Understanding: What data do we have? What is its structure? Are there missing values or outliers? This involves initial data collection and exploration.
+
+-Data Preparation: Also known as data wrangling or munging. This is where we clean and transform the raw data into a usable format. 
+ This step often takes the most time (60-80% of a project). 
+ Tasks include handling missing values, correcting data types, and feature engineering.
+
+-Modeling: Selecting and applying various machine learning algorithms to the prepared data. We might try multiple models (e.g., Linear Regression, Decision Trees) to see which performs best.
+
+-Evaluation: How well does the model solve the business problem? We use statistical metrics (like Accuracy, Precision, Recall for classification, or RMSE for regression) to assess performance.
+ The key question: Does this model meet the business objectives defined in step 1?
+
+-Deployment: Putting the model into production so it can provide insights or make decisions on new, unseen data. This could be a simple report, a dashboard, or an integrated API.
+
+The Python Data Science Ecosystem:
+We'll be using these libraries throughout the course:
+
+NumPy: The fundamental package for scientific computing in Python. It provides support for large, multi-dimensional arrays and matrices.
+
+Pandas: Built on top of NumPy, it provides easy-to-use data structures (Series and DataFrames) and data analysis tools. This is your primary tool for data wrangling.
+
+Matplotlib: The foundational plotting library for creating static, animated, and interactive visualizations in Python.
+
+Seaborn: Built on Matplotlib, it provides a high-level interface for drawing attractive statistical graphics.
+
+Scikit-learn: The go-to library for machine learning. It features various classification, regression, and clustering algorithms.
+
+Real-World Application Example
+Scenario: An e-commerce company wants to increase sales by providing personalized coupon recommendations to users at checkout.
+
+Let's map this to CRISP-DM:
+
+Business Understanding: Objective: Increase average order value by 10% through personalized coupons.
+
+Data Understanding: We pull data from the company's SQL database. We might have tables like users, transactions, products, and coupons. We explore this data to see purchase history, product categories, and past coupon usage.
+
+Data Preparation: We merge these tables into a single dataset. We might create new features, like "average_spent_per_month" or "preferred_category". We handle missing values for new users.
+
+Modeling: We frame this as a classification problem: "Which coupon (Class A, B, C, or 'no coupon') is this user most likely to use?" We train a model like a Random Forest classifier on historical data where we know which coupons were used.
+
+Evaluation: We evaluate the model on a held-out test set. We might find it has 85% accuracy. More importantly, we run an A/B test to see if the model-driven recommendations actually lead to a higher average order value compared to the old method.
+
+Deployment: The winning model is deployed as a real-time API. When a user reaches the checkout page, the website calls this API, which returns the recommended coupon, and it's displayed to the user.
+
+Module 1 Quiz
+Let's test your understanding of the foundational concepts.
+
+1. Multiple Choice:
+Which stage of the CRISP-DM process is primarily concerned with defining the project's goals and success criteria?
+A) Data Understanding
+B) Business Understanding
+C) Modeling
+D) Data Preparation
+
+2. Multiple Choice:
+A Data Scientist spends most of their time in which phase of the CRISP-DM process?
+A) Business Understanding
+B) Modeling
+C) Data Preparation
+D) Deployment
+
+3. True or False:
+Scikit-learn is the primary Python library for data manipulation and wrangling, providing the DataFrame object.
+
+4. Matching:
+Match the Python library to its primary use case in Data Science.
+
+1. NumPy
+
+2. Pandas
+
+3. Scikit-learn
+
+4. Matplotlib
+
+(A) Machine Learning algorithms and model evaluation.
+
+(B) Fundamental numerical computation with arrays.
+
+(C) Creating static, animated, and interactive visualizations.
+
+(D) Data structures (DataFrames) and tools for data analysis/wrangling.
